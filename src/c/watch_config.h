@@ -8,7 +8,7 @@
 //#define USE_TIME_MACHINE  // NOTE mixing with DEBUG_TIME doesn't make sense
 
 // Show step count using builtin code
-#define USE_HEALTH
+//#define USE_HEALTH
 //#define UPDATE_HEALTH_ON_ACTIVITY  /* If not set, only updates step count display once per minute */
 
 #define DRAW_BATTERY
@@ -34,7 +34,9 @@
     #endif /* DRAW_BATTERY */
 
 #else /* PBL_RECT 144x168*/
-    #define CLOCK_POS GRect(0, 52, 144, 168) /* probably taller than really needed */
+    /* Clock at top of screen, Image below and centered horizontally */
+    #define CLOCK_POS GRect(0, -15, 144, 168)
+
     #define HEALTH_POS GRect(0, 40, 144, 168)
     #define BT_POS GRect(0, 120, 144, 168) /* probably taller than really needed */
     #define DATE_POS GRect(0, 140, 144, 168) /* probably taller than really needed */

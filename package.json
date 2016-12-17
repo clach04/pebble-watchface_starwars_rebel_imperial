@@ -4,12 +4,12 @@
         "pebble-clay": "^1.0.1"
     },
     "keywords": [],
-    "name": "fill-me-in",
+    "name": "starwars_rebel_imperial",
     "pebble": {
         "capabilities": [
             "configurable"
         ],
-        "displayName": "FILL ME IN!",
+        "displayName": "Star Wars Rebel Imperial",
         "enableMultiJS": true,
         "messageKeys": [
             "TIME_COLOR",
@@ -28,7 +28,7 @@
             "chalk",
             "diorite"
         ],
-        "uuid": "33a003e9-91ec-40fe-b652-b41248212f74",
+        "uuid": "ad108cb6-8da8-4317-93db-3e383b9c5db8",
         "watchapp": {
             "watchface": true
         }
