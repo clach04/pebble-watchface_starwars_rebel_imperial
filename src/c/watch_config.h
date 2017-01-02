@@ -21,13 +21,22 @@
 //#define BG_IMAGE RESOURCE_ID_IMAGE_EMPIRE
 #define IMAGE_RES_X 132  /* NOTE if image res changes - this needs to change too! */
 #define IMAGE_RES_Y 132  /* NOTE if image res changes - this needs to change too! */
-// imae at bottom of screen
-#define BG_IMAGE_GRECT GRect((144 - IMAGE_RES_X) / 2, 168 - IMAGE_RES_Y,  IMAGE_RES_X, IMAGE_RES_Y)
+
+#ifdef PBL_ROUND /* 180x180 */
+    #define SCREEN_WIDTH 180
+    #define SCREEN_HEIGHT 180
+#else /* PBL_RECT 144x168*/
+    #define SCREEN_WIDTH 144
+    #define SCREEN_HEIGHT 168
+#endif /* PBL_RECT */
+
+// image at bottom of screen
+#define BG_IMAGE_GRECT GRect((SCREEN_WIDTH - IMAGE_RES_X) / 2, SCREEN_HEIGHT - IMAGE_RES_Y,  IMAGE_RES_X, IMAGE_RES_Y)
 
 
 #ifdef PBL_ROUND /* 180x180 */
 /*TODO center/move right*/
-    #define CLOCK_POS GRect(0, 52, 180, 180) /* probably taller than really needed */
+    #define CLOCK_POS GRect(0, 3, 180, 180) /* probably taller than really needed */
     #define HEALTH_POS GRect(0, 40, 180, 180)
     #define BT_POS GRect(0, 100, 180, 180) /* probably taller than really needed */
 
