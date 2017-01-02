@@ -19,7 +19,20 @@
         ],
         "projectType": "native",
         "resources": {
-            "media": []
+            "media": [
+                {
+                    "file": "images/Rebel_Alliance_logo_132x132.png",
+                    "name": "IMAGE_REBEL",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Galactic_Empire_emblem_132x132.png",
+                    "name": "IMAGE_EMPIRE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
         },
         "sdkVersion": "3",
         "targetPlatforms": [
