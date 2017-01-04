@@ -17,10 +17,10 @@
 //#define QUIET_TIME_IMAGE RESOURCE_ID_IMAGE_QUIET_TIME
 //#define QUIET_TIME_IMAGE_GRECT GRect(20, 20, 20, 20)  // Example assumes a 20x20 image
 
-#define BG_IMAGE RESOURCE_ID_IMAGE_REBEL // FIXME needs work
-//#define BG_IMAGE RESOURCE_ID_IMAGE_EMPIRE
-#define IMAGE_RES_X 132  /* NOTE if image res changes - this needs to change too! */
-#define IMAGE_RES_Y 132  /* NOTE if image res changes - this needs to change too! */
+//#define BG_IMAGE RESOURCE_ID_IMAGE_REBEL // FIXME needs work
+#define BG_IMAGE RESOURCE_ID_IMAGE_EMPIRE
+#define IMAGE_RES_X 120  /* NOTE if image res changes - this needs to change too! */
+#define IMAGE_RES_Y 120  /* NOTE if image res changes - this needs to change too! */
 
 #ifdef PBL_ROUND /* 180x180 */
     #define SCREEN_WIDTH 180
@@ -60,9 +60,7 @@
     #define DATE_FMT_STR "%a\n%b\n%d"
     #define MAX_DATE_STR "Thu\nAug\n00"  /* if custom version of DATE_FMT_STR is set, MAX_DATE_STR  needs to be updated too */
     //#define DATE_POS GRect(0, 35, 144, 168) /* probably taller than really needed */
-    //#define DATE_POS GRect(0, 30, 144, 168) /* probably taller than really needed */
-    //#define DATE_POS GRect(0, 29, 144, 168) /* probably taller than really needed */
-    #define DATE_POS GRect(0, 28, 144, 168) /* probably taller than really needed */
+    #define DATE_POS GRect(0, 30, 144, 168) /* probably taller than really needed */
 
     #ifdef DRAW_BATTERY
         #define BAT_POS GRect(0, 35, 144, 168)

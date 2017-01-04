@@ -21,14 +21,14 @@
         "resources": {
             "media": [
                 {
-                    "file": "images/Rebel_Alliance_logo_132x132.png",
-                    "name": "IMAGE_REBEL",
+                    "file": "images/Galactic_Empire_emblem_120x120.png",
+                    "name": "IMAGE_EMPIRE",
                     "targetPlatforms": null,
                     "type": "bitmap"
                 },
                 {
-                    "file": "images/Galactic_Empire_emblem_132x132.png",
-                    "name": "IMAGE_EMPIRE",
+                    "file": "images/Rebel_Alliance_logo_120x120.png",
+                    "name": "IMAGE_REBEL",
                     "targetPlatforms": null,
                     "type": "bitmap"
                 }
