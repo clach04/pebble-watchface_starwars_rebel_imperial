@@ -8,6 +8,8 @@
 //#define USE_TIME_MACHINE  // NOTE mixing with DEBUG_TIME doesn't make sense
 
 // Show step count using builtin code
+// TODO require health API to check if user sleeping when BT disconnects to avoid viibration
+// but if `USE_HEALTH` is set, step count is displayed.....
 //#define USE_HEALTH
 //#define UPDATE_HEALTH_ON_ACTIVITY  /* If not set, only updates step count display once per minute */
 
