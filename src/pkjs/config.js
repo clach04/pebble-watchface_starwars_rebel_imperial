@@ -17,12 +17,14 @@ module.exports = [
             },
             {
                 "type": "color",
+                "allowGray": true,
                 "label": "Background",
                 "messageKey": "BACKGROUND_COLOR",
                 "defaultValue": "000000"
             },
             {
                 "type": "color",
+                "allowGray": false,
                 "label": "Foreground",
                 "messageKey": "TIME_COLOR",
                 "defaultValue": "FFFFFF"
