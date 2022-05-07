@@ -1,7 +1,26 @@
-Watchface Framework
-===================
+Pebble Watchface Framework
+==========================
 
-Working, ready to build Bare-Bones watch face for Pebble (OG/Classic, Time, Round, and Pebble 2) Aplite, Basalt, Chalk, and Diorite. With configuration and settings support via [Clay](https://github.com/pebble/clay).
+https://github.com/clach04/pebble_watchface_framework
+
+Working, ready to build Bare-Bones watch face for Pebble (OG/Classic, Time, Round, and Pebble 2) Aplite, Basalt, Chalk, and Diorite. With configuration and settings support via [Clay](https://github.com/clach04/pebble-clay/tree/clach04_emulator_url_index).
+
+Requires Pebble SDK of some kind (current code and WAF script is for SDK 4.5). Original instructions are for CloudPebble.
+
+Current code works with local SDK, recommend using a Docker Container, for example:
+
+  * https://github.com/bboehmke/docker-pebble-dev
+  * https://github.com/clach04/docker-pebble-dev/wiki has some notes
+
+GitHub Actions note, https://github.com/clach04/pebble_watchface_framework/blob/master/.github/workflows/main.yml includes a pebble build action that runs by default on every push to master!
+Kudos to https://github.com/daktak for initial version that the action used here is based on. First seen in https://github.com/mattrossman/forecaswatch2/pull/50
+
+Installation notes for PBW:
+
+  * Recommend using [Cx File Explorer](https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer) to "open" it and then select Pebble App.
+      * NOTE Android 9 and later also require [File URI Plugin](https://play.google.com/store/apps/details?id=com.alphainventor.plugin.fileuri)
+  * Side Loader https://play.google.com/store/apps/details?id=io.rebble.charon
+  * Or use Gadget Bridge https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Pebble-Getting-Started
 
 All the examples below use the same framework.
 
@@ -46,8 +65,7 @@ Then start adding options and resources. By default the empty framework will:
       * Background color
       * Whether to vibrate on Bluetooth disconnect (default is do *not* vibrate), honoring Quiet Time mode
 
-There is no default icon, add a 25x25 resource and declare it as an icon, see http://developer.getpebble.com/guides/pebble-apps/resources/image-resources/
-
+There is no default icon, add a 25x25 resource and declare it as an icon, see https://developer.rebble.io/developer.pebble.com/guides/migration/migration-guide-4/index.html
 Additional options
 ------------------
 
@@ -129,4 +147,9 @@ Notes and other resources
 
 For suggestions on image options and conversion see https://www.reddit.com/r/pebble/comments/3ej5wf/pebble_time_image_conversion_contrast/
 
-Multi-platform support https://developer.getpebble.com/guides/best-practices/multi-platform/
+Multi-platform support https://developer.rebble.io/developer.pebble.com/guides/best-practices/index.html
+
+SDK API https://developer.rebble.io/developer.pebble.com/docs/index.html
+
+Pebble developer wiki https://github.com/pebble-dev/wiki/wiki
+
